@@ -3,9 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Interactive Quiz App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="quiz-container">
+        <!-- Category Selection Screen -->
+        <div id="categoryScreen" class="category-screen">
+            <div class="quiz-header">
+                <h1 class="quiz-title">Knowledge Challenge</h1>
+                <p class="quiz-subtitle">Choose your quiz category</p>
+            </div>
+            
+            <div class="categories-grid">
+                <div class="category-card" onclick="selectCategory('general')">
+                    <div class="category-icon">🧠</div>
+                    <h3>General Knowledge</h3>
+                    <p>Test your general knowledge across various topics</p>
+                    <div class="question-count">10 Questions</div>
+                </div>
+                
+                <div class="category-card" onclick="selectCategory('javascript')">
+                    <div class="category-icon">📜</div>
+                    <h3>JavaScript</h3>
+                    <p>Test your JavaScript programming skills</p>
+                    <div class="question-count">10 Questions</div>
+                </div>
+                
+                <div class="category-card" onclick="selectCategory('react')">
+                    <div class="category-icon">⚛️</div>
+                    <h3>React</h3>
+                    <p>Challenge your React framework knowledge</p>
+                    <div class="question-count">10 Questions</div>
+                </div>
+                
+                <div class="category-card" onclick="selectCategory('java')">
+                    <div class="category-icon">☕</div>
+                    <h3>Java</h3>
+                    <p>Test your Java programming expertise</p>
+                    <div class="question-count">10 Questions</div>
+                </div>
+                
+                <div class="category-card" onclick="selectCategory('cpp')">
+                    <div class="category-icon">🔧</div>
+                    <h3>C++</h3>
+                    <p>Challenge your C++ programming skills</p>
+                    <div class="question-count">10 Questions</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quiz Header -->
+        <div class="quiz-header" id="quizHeader" style="display: none;">
+            <h1 class="quiz-title" id="categoryTitle">Knowledge Challenge</h1>
+            <p class="quiz-subtitle" id="categorySubtitle">Test your knowledge</p>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <button class="back-btn" onclick="goBackToCategories()">← Back to Categories</button>
+        </div>
+
+        <!-- Loading Screen -->
+        <div id="loadingScreen" class="loading">
+            <div class="spinner"></div>
+            <p>Loading quiz questions...</p>
+        </div>
+
+        <!-- Quiz Content -->
+        <div id="quizContent">
+            <!-- Questions will be dynamically inserted here -->
+        </div>
+
+        <!-- Quiz Controls -->
+        <div class="controls" id="quizControls" style="display: none;">
+            <button class="btn btn-secondary" id="prevBtn" onclick="previousQuestion()" disabled>Previous</button>
+            <div class="timer" id="timer" style="display: none;">
+                <svg class="timer-icon" viewBox="0 0 24 24">
+                    <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"/>
+                </svg>
+                <span id="timeLeft">30</span>
+            </div>
+            <button class="btn btn-primary" id="nextBtn" onclick="nextQuestion()">Next</button>
+        </div>
+
+        <!-- Results Screen -->
+        <div class="results-container" id="resultsContainer">
+            <h2>Quiz Complete!</h2>
+            <div class="score-display" id="scoreDisplay"></div>
+            <div class="performance-message" id="performanceMessage"></div>
+            <div class="performance-details" id="performanceDetails"></div>
+            <div class="results-actions">
+                <button class="btn btn-primary" onclick="restartQuiz()">Retake Quiz</button>
+                <button class="btn btn-secondary" onclick="goBackToCategories()">Choose Another Category</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
