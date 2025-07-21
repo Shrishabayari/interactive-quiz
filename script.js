@@ -1,4 +1,4 @@
-// Quiz Questions Database
+// Expanded Quiz Questions Database - 20 Questions Per Subject
 const quizQuestions = {
     general: [
         {
@@ -60,6 +60,66 @@ const quizQuestions = {
             answers: ["0", "1", "2", "3"],
             correct: 2,
             explanation: "2 is the smallest prime number and the only even prime number."
+        },
+        {
+            question: "Which gas makes up approximately 78% of Earth's atmosphere?",
+            answers: ["Oxygen", "Nitrogen", "Carbon Dioxide", "Argon"],
+            correct: 1,
+            explanation: "Nitrogen makes up about 78% of Earth's atmosphere."
+        },
+        {
+            question: "What is the tallest mountain in the world?",
+            answers: ["K2", "Mount Everest", "Mount Kilimanjaro", "Mount McKinley"],
+            correct: 1,
+            explanation: "Mount Everest stands at 29,032 feet (8,849 meters) above sea level."
+        },
+        {
+            question: "Who wrote the novel '1984'?",
+            answers: ["Aldous Huxley", "Ray Bradbury", "George Orwell", "H.G. Wells"],
+            correct: 2,
+            explanation: "George Orwell wrote '1984', published in 1949."
+        },
+        {
+            question: "Which element has the chemical symbol 'O'?",
+            answers: ["Gold", "Silver", "Oxygen", "Iron"],
+            correct: 2,
+            explanation: "O is the chemical symbol for Oxygen."
+        },
+        {
+            question: "What is the currency of the United Kingdom?",
+            answers: ["Euro", "Dollar", "Pound Sterling", "Franc"],
+            correct: 2,
+            explanation: "The Pound Sterling (GBP) is the official currency of the UK."
+        },
+        {
+            question: "Which inventor is credited with creating the light bulb?",
+            answers: ["Nikola Tesla", "Thomas Edison", "Benjamin Franklin", "Alexander Graham Bell"],
+            correct: 1,
+            explanation: "Thomas Edison is widely credited with inventing the practical incandescent light bulb."
+        },
+        {
+            question: "What is the largest mammal in the world?",
+            answers: ["African Elephant", "Blue Whale", "Sperm Whale", "Giraffe"],
+            correct: 1,
+            explanation: "The Blue Whale is the largest mammal and animal on Earth."
+        },
+        {
+            question: "In which country would you find Machu Picchu?",
+            answers: ["Chile", "Brazil", "Peru", "Ecuador"],
+            correct: 2,
+            explanation: "Machu Picchu is an ancient Incan city located in Peru."
+        },
+        {
+            question: "What is the hardest natural substance on Earth?",
+            answers: ["Gold", "Iron", "Diamond", "Quartz"],
+            correct: 2,
+            explanation: "Diamond is the hardest natural substance known to man."
+        },
+        {
+            question: "Which planet is closest to the Sun?",
+            answers: ["Venus", "Mercury", "Earth", "Mars"],
+            correct: 1,
+            explanation: "Mercury is the closest planet to the Sun in our solar system."
         }
     ],
     
@@ -123,6 +183,66 @@ const quizQuestions = {
             answers: ["A type of loop", "A function with access to outer scope", "A method to close variables", "An error handling mechanism"],
             correct: 1,
             explanation: "A closure is a function that has access to variables in its outer scope even after the outer function returns."
+        },
+        {
+            question: "Which method is used to create a new array with all elements that pass a test?",
+            answers: ["map()", "filter()", "reduce()", "forEach()"],
+            correct: 1,
+            explanation: "The filter() method creates a new array with elements that pass the provided test function."
+        },
+        {
+            question: "What is the difference between 'let' and 'var'?",
+            answers: ["No difference", "let has block scope, var has function scope", "var has block scope, let has function scope", "let is faster than var"],
+            correct: 1,
+            explanation: "'let' has block scope while 'var' has function scope, and 'let' doesn't allow redeclaration."
+        },
+        {
+            question: "Which method is used to execute a function after a specified delay?",
+            answers: ["setInterval()", "setTimeout()", "delay()", "wait()"],
+            correct: 1,
+            explanation: "setTimeout() executes a function after a specified number of milliseconds."
+        },
+        {
+            question: "What does the spread operator (...) do?",
+            answers: ["Combines arrays", "Expands iterables into individual elements", "Creates objects", "Defines functions"],
+            correct: 1,
+            explanation: "The spread operator expands iterables (arrays, strings) into individual elements."
+        },
+        {
+            question: "Which method is used to find the index of an element in an array?",
+            answers: ["find()", "search()", "indexOf()", "locate()"],
+            correct: 2,
+            explanation: "indexOf() returns the first index of the specified element, or -1 if not found."
+        },
+        {
+            question: "What is destructuring in JavaScript?",
+            answers: ["Breaking objects", "Extracting values from arrays/objects", "Deleting properties", "Error handling"],
+            correct: 1,
+            explanation: "Destructuring allows unpacking values from arrays or properties from objects into variables."
+        },
+        {
+            question: "Which keyword is used to handle exceptions in JavaScript?",
+            answers: ["catch", "try", "throw", "All of the above"],
+            correct: 3,
+            explanation: "JavaScript uses try, catch, and throw keywords for exception handling."
+        },
+        {
+            question: "What is the purpose of the 'use strict' directive?",
+            answers: ["Faster execution", "Enables strict mode for better error checking", "Reduces memory usage", "Enables new features"],
+            correct: 1,
+            explanation: "'use strict' enables strict mode which catches common coding errors and prevents unsafe actions."
+        },
+        {
+            question: "Which method is used to convert an array to a string?",
+            answers: ["toString()", "join()", "stringify()", "Both A and B"],
+            correct: 3,
+            explanation: "Both toString() and join() can convert arrays to strings, with join() allowing custom separators."
+        },
+        {
+            question: "What is an arrow function in JavaScript?",
+            answers: ["A function that points somewhere", "A shorter syntax for function expressions", "A recursive function", "A callback function"],
+            correct: 1,
+            explanation: "Arrow functions provide a shorter syntax for function expressions and don't bind their own 'this'."
         }
     ],
     
@@ -186,6 +306,66 @@ const quizQuestions = {
             answers: ["useState", "useEffect", "useMemo", "useCallback"],
             correct: 2,
             explanation: "useMemo is used to memoize expensive calculations and optimize performance."
+        },
+        {
+            question: "What is the purpose of useCallback hook?",
+            answers: ["To manage state", "To memoize functions", "To handle effects", "To create refs"],
+            correct: 1,
+            explanation: "useCallback memoizes functions to prevent unnecessary re-renders of child components."
+        },
+        {
+            question: "Which lifecycle method is called before a component is destroyed?",
+            answers: ["componentDidMount", "componentWillUnmount", "componentDidUpdate", "componentWillUpdate"],
+            correct: 1,
+            explanation: "componentWillUnmount is called before a component is removed from the DOM."
+        },
+        {
+            question: "What is prop drilling in React?",
+            answers: ["Creating deep component trees", "Passing props through multiple levels", "Optimizing props", "Validating props"],
+            correct: 1,
+            explanation: "Prop drilling refers to passing props through multiple component levels to reach nested components."
+        },
+        {
+            question: "Which hook is used to access React context?",
+            answers: ["useContext", "useProvider", "useConsumer", "useGlobal"],
+            correct: 0,
+            explanation: "useContext hook is used to consume context values in functional components."
+        },
+        {
+            question: "What is the purpose of React.StrictMode?",
+            answers: ["Improves performance", "Identifies unsafe lifecycles and side effects", "Enables strict typing", "Reduces bundle size"],
+            correct: 1,
+            explanation: "React.StrictMode helps identify unsafe lifecycles, legacy API usage, and unexpected side effects."
+        },
+        {
+            question: "Which method is used to create a ref in functional components?",
+            answers: ["createRef()", "useRef()", "newRef()", "makeRef()"],
+            correct: 1,
+            explanation: "useRef() hook is used to create refs in functional components."
+        },
+        {
+            question: "What is the difference between controlled and uncontrolled components?",
+            answers: ["No difference", "Controlled components manage state via React, uncontrolled via DOM", "Controlled are faster", "Uncontrolled are more secure"],
+            correct: 1,
+            explanation: "Controlled components have their state managed by React, while uncontrolled components store state in the DOM."
+        },
+        {
+            question: "Which hook would you use for complex state logic?",
+            answers: ["useState", "useReducer", "useEffect", "useMemo"],
+            correct: 1,
+            explanation: "useReducer is preferred for complex state logic that involves multiple sub-values or when the next state depends on the previous one."
+        },
+        {
+            question: "What is React.memo used for?",
+            answers: ["Memory management", "Component memoization", "State memoization", "Effect memoization"],
+            correct: 1,
+            explanation: "React.memo is a higher-order component that memoizes the result and skips re-rendering if props haven't changed."
+        },
+        {
+            question: "Which pattern is recommended for sharing state between components?",
+            answers: ["Global variables", "Props drilling", "Lifting state up", "Direct DOM manipulation"],
+            correct: 2,
+            explanation: "Lifting state up to a common ancestor component is the recommended pattern for sharing state."
         }
     ],
     
@@ -249,6 +429,66 @@ const quizQuestions = {
             answers: ["Hiding implementation details", "Code reusability", "Multiple inheritance", "Method overriding"],
             correct: 0,
             explanation: "Encapsulation is the principle of hiding implementation details and exposing only necessary parts."
+        },
+        {
+            question: "What is the difference between abstract class and interface?",
+            answers: ["No difference", "Abstract class can have concrete methods, interface cannot", "Interface can have concrete methods, abstract class cannot", "Abstract class is faster"],
+            correct: 1,
+            explanation: "Abstract classes can have both abstract and concrete methods, while interfaces (before Java 8) could only have abstract methods."
+        },
+        {
+            question: "Which keyword is used to handle exceptions in Java?",
+            answers: ["catch", "try", "throw", "All of the above"],
+            correct: 3,
+            explanation: "Java uses try, catch, throw, throws, and finally for exception handling."
+        },
+        {
+            question: "What is polymorphism in Java?",
+            answers: ["Multiple inheritance", "One interface, multiple implementations", "Method overloading", "Data hiding"],
+            correct: 1,
+            explanation: "Polymorphism allows one interface to be used for a general class of actions, with specific implementations varying."
+        },
+        {
+            question: "Which collection is synchronized in Java?",
+            answers: ["ArrayList", "Vector", "HashMap", "HashSet"],
+            correct: 1,
+            explanation: "Vector is synchronized (thread-safe) while ArrayList is not."
+        },
+        {
+            question: "What is the purpose of the 'super' keyword?",
+            answers: ["To call parent constructor", "To access parent class members", "To refer to parent class", "All of the above"],
+            correct: 3,
+            explanation: "The 'super' keyword is used to refer to the immediate parent class object, call parent constructors, and access parent class members."
+        },
+        {
+            question: "Which method must be implemented when implementing Runnable interface?",
+            answers: ["start()", "run()", "execute()", "thread()"],
+            correct: 1,
+            explanation: "The run() method must be implemented when implementing the Runnable interface."
+        },
+        {
+            question: "What is garbage collection in Java?",
+            answers: ["Manual memory management", "Automatic memory management", "Error handling", "Performance optimization"],
+            correct: 1,
+            explanation: "Garbage collection automatically manages memory by freeing up unused objects."
+        },
+        {
+            question: "Which keyword is used to define a package in Java?",
+            answers: ["package", "import", "namespace", "module"],
+            correct: 0,
+            explanation: "The 'package' keyword is used to define a package in Java."
+        },
+        {
+            question: "What is method overriding in Java?",
+            answers: ["Same method in different classes", "Redefining parent class method in child class", "Multiple methods with same name", "Calling parent method"],
+            correct: 1,
+            explanation: "Method overriding is redefining a parent class method in the child class with the same signature."
+        },
+        {
+            question: "Which wrapper class is used for int primitive type?",
+            answers: ["Int", "Integer", "Number", "Wrapper"],
+            correct: 1,
+            explanation: "Integer is the wrapper class for the int primitive type in Java."
         }
     ],
     
@@ -313,6 +553,66 @@ const quizQuestions = {
             correct: 1,
             explanation: "Virtual functions enable polymorphism by allowing derived classes to override base class methods."
         },
+        {
+            question: "What is the purpose of copy constructor in C++?",
+            answers: ["To copy files", "To create a copy of an object", "To copy memory", "To copy functions"],
+            correct: 1,
+            explanation: "Copy constructor creates a new object as a copy of an existing object."
+        },
+        {
+            question: "Which operator is used to deallocate memory in C++?",
+            answers: ["delete", "free", "remove", "clear"],
+            correct: 0,
+            explanation: "The 'delete' operator is used to deallocate memory allocated with 'new'."
+        },
+        {
+            question: "What is operator overloading in C++?",
+            answers: ["Creating new operators", "Giving additional meanings to operators", "Overriding operators", "Deleting operators"],
+            correct: 1,
+            explanation: "Operator overloading allows giving additional meanings to operators for user-defined types."
+        },
+        {
+            question: "Which header file is needed for string operations in C++?",
+            answers: ["<string.h>", "<string>", "<cstring>", "<str>"],
+            correct: 1,
+            explanation: "<string> header is needed for C++ string class operations."
+        },
+        {
+            question: "What is a pure virtual function in C++?",
+            answers: ["A function with no implementation", "A virtual function assigned to 0", "An abstract function", "All of the above"],
+            correct: 3,
+            explanation: "A pure virtual function is a virtual function assigned to 0, making the class abstract."
+        },
+        {
+            question: "Which keyword is used for inheritance in C++?",
+            answers: ["inherit", "extends", ":", "derives"],
+            correct: 2,
+            explanation: "The colon (:) is used to specify inheritance in C++."
+        },
+        {
+            question: "What is the scope resolution operator in C++?",
+            answers: [".", "->", "::", "&"],
+            correct: 2,
+            explanation: "The scope resolution operator (::) is used to access global variables and class members."
+        },
+        {
+            question: "Which type of inheritance is not supported in C++?",
+            answers: ["Single", "Multiple", "Multilevel", "All are supported"],
+            correct: 3,
+            explanation: "C++ supports single, multiple, multilevel, hierarchical, and hybrid inheritance."
+        },
+        {
+            question: "What is a template in C++?",
+            answers: ["A design pattern", "A generic programming feature", "A class type", "A function type"],
+            correct: 1,
+            explanation: "Templates are a generic programming feature that allows writing code for any data type."
+        },
+        {
+            question: "Which keyword is used to prevent inheritance of a class?",
+            answers: ["sealed", "final", "private", "protected"],
+            correct: 1,
+            explanation: "The 'final' keyword (C++11) prevents a class from being inherited."
+        }
     ],
     dsa: [
         {
@@ -374,10 +674,69 @@ const quizQuestions = {
             answers: ["Bubble Sort", "Selection Sort", "Merge Sort", "Insertion Sort"],
             correct: 2,
             explanation: "Merge Sort has O(n log n) average-case complexity, which is optimal for comparison-based sorting."
+        },
+        {
+            question: "What is the primary advantage of a Hash Table over a Binary Search Tree (BST) for lookup operations?",
+            answers: ["Ordered data storage", "Guaranteed O(log n) worst-case time", "Faster average-case lookup (O(1))", "Less memory usage"],
+            correct: 2,
+            explanation: "Hash tables offer O(1) average-case time complexity for lookup, insertion, and deletion, which is faster than BST's O(log n)."
+        },
+        {
+            question: "In a Graph, what does BFS (Breadth-First Search) typically find?",
+            answers: ["Shortest path in unweighted graphs", "Cycles in graphs", "Longest path in graphs", "Minimum Spanning Tree"],
+            correct: 0,
+            explanation: "BFS explores all the neighbor nodes at the present depth level before moving on to the nodes at the next depth level, effectively finding the shortest path in unweighted graphs."
+        },
+        {
+            question: "Which of the following data structures is typically used to implement a 'Priority Queue'?",
+            answers: ["Linked List", "Array", "Binary Heap", "Hash Map"],
+            correct: 2,
+            explanation: "A binary heap (min-heap or max-heap) is the most common and efficient data structure for implementing a priority queue due to its O(log n) insertion and deletion operations."
+        },
+        {
+            question: "What is the process of visiting each node in a tree exactly once called?",
+            answers: ["Searching", "Sorting", "Traversal", "Hashing"],
+            correct: 2,
+            explanation: "Traversal is the process of visiting (checking and/or updating) each node in a tree data structure exactly once."
+        },
+        {
+            question: "What is dynamic programming primarily used for?",
+            answers: ["Solving problems by breaking them into smaller, independent subproblems", "Optimizing memory usage in algorithms", "Solving problems with overlapping subproblems and optimal substructure", "Performing real-time calculations"],
+            correct: 2,
+            explanation: "Dynamic programming is an algorithmic technique for solving optimization problems by breaking them down into simpler subproblems and storing the results of those subproblems to avoid recomputing them."
+        },
+        {
+            question: "Which data structure is best suited for implementing an Undo/Redo functionality in an application?",
+            answers: ["Queue", "Stack", "Binary Tree", "Graph"],
+            correct: 1,
+            explanation: "A stack is ideal for Undo/Redo functionality because operations are pushed onto the stack, and undoing means popping the last operation (LIFO principle)."
+        },
+        {
+            question: "What is the main characteristic of a 'Circular Linked List'?",
+            answers: ["Nodes are sorted by value", "Each node points to two other nodes", "The last node points back to the first node", "It only allows insertion at the beginning"],
+            correct: 2,
+            explanation: "In a circular linked list, the last node of the list points back to the first node, forming a closed loop."
+        },
+        {
+            question: "Which algorithm finds the Minimum Spanning Tree (MST) in a graph?",
+            answers: ["Dijkstra's Algorithm", "Floyd-Warshall Algorithm", "Prim's or Kruskal's Algorithm", "Bellman-Ford Algorithm"],
+            correct: 2,
+            explanation: "Prim's Algorithm and Kruskal's Algorithm are two well-known greedy algorithms used to find the Minimum Spanning Tree of a connected, edge-weighted undirected graph."
+        },
+        {
+            question: "What is 'memoization' in dynamic programming?",
+            answers: ["Storing results of function calls and returning the cached result when the same inputs occur again", "Breaking down a problem into smaller subproblems", "Using a queue to manage function calls", "Iteratively solving problems from the base cases up"],
+            correct: 0,
+            explanation: "Memoization is an optimization technique used primarily in dynamic programming. It involves storing the results of expensive function calls and returning the cached result when the same inputs occur again."
+        },
+        {
+            question: "In Big O notation, what does O(1) signify?",
+            answers: ["Linear time complexity", "Logarithmic time complexity", "Constant time complexity", "Quadratic time complexity"],
+            correct: 2,
+            explanation: "O(1) (Constant time complexity) means that the time required to complete a function or algorithm does not depend on the size of the input data set."
         }
     ]
 };
-
 // Quiz Application Main Script
 class QuizApp {
     constructor() {
@@ -389,6 +748,7 @@ class QuizApp {
         this.timer = null;
         this.timeLeft = 30;
         this.isTimerEnabled = true;
+        this.questionsToShow = 10; // Number of questions to show randomly
         
         this.init();
     }
@@ -441,13 +801,23 @@ class QuizApp {
         }
     }
     
+    // Select random questions from the available pool
+    selectRandomQuestions(questions, count) {
+        const shuffled = [...questions];
+        this.shuffleArray(shuffled);
+        return shuffled.slice(0, Math.min(count, shuffled.length));
+    }
+    
     startQuiz() {
-        this.currentQuestions = [...quizQuestions[this.currentCategory]];
+        // Get all questions for the category
+        const allQuestions = [...quizQuestions[this.currentCategory]];
+        
+        // Select random questions (5 from 10, or whatever is available)
+        this.currentQuestions = this.selectRandomQuestions(allQuestions, this.questionsToShow);
+        
         this.currentQuestionIndex = 0;
         this.userAnswers = [];
         this.score = 0;
-        
-        this.shuffleArray(this.currentQuestions);
         
         this.hideAllScreens();
         this.setupQuizHeader();
@@ -476,7 +846,7 @@ class QuizApp {
             react: 'React',
             java: 'Java',
             cpp: 'C++',
-            dsa: 'Data Structures & Algorithms'
+            dsa: 'DSA'
         };
         
         const categoryTitle = document.getElementById('categoryTitle');
@@ -810,6 +1180,11 @@ class QuizApp {
         if (!this.isTimerEnabled) {
             this.clearTimer();
         }
+    }
+    
+    // Method to set number of questions to show
+    setQuestionCount(count) {
+        this.questionsToShow = count;
     }
     
     // Utility method to add questions programmatically
