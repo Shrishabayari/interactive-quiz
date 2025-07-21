@@ -61,6 +61,14 @@
                 <div class="progress-bar" id="progressBar"></div>
             </div>
             <button class="back-btn" onclick="goBackToCategories()">← Back to Categories</button>
+            
+            <!-- Timer moved to top right - UPDATED -->
+            <div class="timer" id="timer">
+                <svg class="timer-icon" viewBox="0 0 24 24">
+                    <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"/>
+                </svg>
+                <span id="timeLeft">30</span>
+            </div>
         </div>
 
         <!-- Loading Screen -->
@@ -77,12 +85,6 @@
         <!-- Quiz Controls -->
         <div class="controls" id="quizControls" style="display: none;">
             <button class="btn btn-secondary" id="prevBtn" onclick="previousQuestion()" disabled>Previous</button>
-            <div class="timer" id="timer" style="display: none;">
-                <svg class="timer-icon" viewBox="0 0 24 24">
-                    <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"/>
-                </svg>
-                <span id="timeLeft">30</span>
-            </div>
             <button class="btn btn-primary" id="nextBtn" onclick="nextQuestion()">Next</button>
         </div>
 
